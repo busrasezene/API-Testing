@@ -1,0 +1,553 @@
+{
+	"id": "775993c9-8f25-48c9-8d18-d06da4880d29",
+	"name": "Nzm Trello APIs",
+	"timestamp": "2024-06-16T18:59:15.592Z",
+	"collection_id": "32092519-87c339fd-a20a-4381-afef-8b762087ebc9",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 26,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-06-16T18:59:06.812Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7d64911c-71fb-4f8f-8276-1a1a0a7a90e9",
+			"name": "Pano1 isimli pano oluşturma Trello'da",
+			"url": "https://api.trello.com/1/boards/?key=your_key&name=Pano1&token=your_token",
+			"time": 955,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true,
+				"Board Created Successfully": true,
+				"Correct board name-Doğru pano adı": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board Created Successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct board name-Doğru pano adı": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				955
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true,
+					"Board Created Successfully": true,
+					"Correct board name-Doğru pano adı": true
+				}
+			]
+		},
+		{
+			"id": "b1a1afcc-3d3d-49c5-b189-6d86269a41ff",
+			"name": "Create a List on a board",
+			"url": "https://api.trello.com/1/boards/666f35fbe5b3af2c79ae3c84/lists?name=List1&key=your_key&token=your_token",
+			"time": 506,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true,
+				"List Created Successfully": true,
+				"Correct list name-Doğru liste adı": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List Created Successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct list name-Doğru liste adı": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				506
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true,
+					"List Created Successfully": true,
+					"Correct list name-Doğru liste adı": true
+				}
+			]
+		},
+		{
+			"id": "e61c35a1-424f-46a2-bc33-173745aa7618",
+			"name": "Create a Card",
+			"url": "https://api.trello.com/1/cards?idList=662265f2eea8729f43ba92c3&key=your_key&token=your_token&name=kart1",
+			"time": 397,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true,
+				"Card Created Successfully": true,
+				"Correct card name-Doğru pano adı": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card Created Successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct card name-Doğru pano adı": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				397
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true,
+					"Card Created Successfully": true,
+					"Correct card name-Doğru pano adı": true
+				}
+			]
+		},
+		{
+			"id": "1cae023b-76a9-45f9-8afe-b4fd80746fe6",
+			"name": "Update Board",
+			"url": "https://api.trello.com/1/boards/666f35fbe5b3af2c79ae3c84?key=your_key&token=your_token&name=Pano1_yeni",
+			"time": 510,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				510
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "e4a8e6f0-a651-4580-8178-5c3c66664bc1",
+			"name": "Update List",
+			"url": "https://api.trello.com/1/lists/662265f2eea8729f43ba92c3?key=your_key&token=your_token&name=List111",
+			"time": 329,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				329
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "0b381515-f91b-445b-b87d-1924f00aae8f",
+			"name": "Update Card",
+			"url": "https://api.trello.com/1/cards/666f35fc4faf52777a7fc6ed?key=your_key&token=your_token&name=card1_yeni",
+			"time": 332,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				332
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "6a534a06-cfa0-4198-b131-d43d4c2f5092",
+			"name": "Read Board / Get a Board",
+			"url": "https://api.trello.com/1/boards/666f35fbe5b3af2c79ae3c84?key=your_key&token=your_token",
+			"time": 236,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				236
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "0b239a91-41be-4b8b-9949-d8b76ec69564",
+			"name": "Read List / Get a list",
+			"url": "https://api.trello.com/1/lists/662265f2eea8729f43ba92c3?key=your_key&token=your_token",
+			"time": 322,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				322
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "832966ca-fe1d-4fcd-b2ef-ae9d10e23e26",
+			"name": "Read Card / Get a Card",
+			"url": "https://api.trello.com/1/cards/666f35fc4faf52777a7fc6ed?key=your_key&token=your_token",
+			"time": 363,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				363
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "ef4513d0-7adb-4985-a718-bee7710d0a8c",
+			"name": "Create a Checklist",
+			"url": "https://api.trello.com/1/checklists?idCard=666f35fc4faf52777a7fc6ed&key=your_key&token=your_token&name=checklist1",
+			"time": 479,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true,
+				"Checklist Created Successfully": true,
+				"Correct checklist name-Doğru checklist adı": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checklist Created Successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct checklist name-Doğru checklist adı": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				479
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true,
+					"Checklist Created Successfully": true,
+					"Correct checklist name-Doğru checklist adı": true
+				}
+			]
+		},
+		{
+			"id": "1c4fe91a-4fb9-4d51-bc7c-08b2446a27b5",
+			"name": "Update a Checklist",
+			"url": "https://api.trello.com/1/checklists/666f35ff5895d8ed9d650d33?key=your_key&token=your_token&name=yenichecklist",
+			"time": 291,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				291
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "367529f5-995e-4e3b-9b60-9b97cb19928d",
+			"name": "Get a Checklist",
+			"url": "https://api.trello.com/1/checklists/666f35ff5895d8ed9d650d33?key=your_key&token=your_token",
+			"time": 237,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true
+				}
+			]
+		},
+		{
+			"id": "30c92e24-9832-4451-b751-00b0f66e7938",
+			"name": "Delete a Checklist",
+			"url": "https://api.trello.com/1/checklists/666f35ff5895d8ed9d650d33?key=your_key&token=your_token",
+			"time": 352,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true,
+				"Checklist Delete Successfully": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checklist Delete Successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				352
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true,
+					"Checklist Delete Successfully": true
+				}
+			]
+		},
+		{
+			"id": "00151af0-6a7e-480b-90bd-3681c0a395da",
+			"name": "Delete Card",
+			"url": "https://api.trello.com/1/cards/666f35fc4faf52777a7fc6ed?key=your_key&token=your_token",
+			"time": 482,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true,
+				"Card Delete Successfully": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Card Delete Successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				482
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true,
+					"Card Delete Successfully": true
+				}
+			]
+		},
+		{
+			"id": "d327bd33-fad4-4e57-85d9-33c09b671fab",
+			"name": "Pano1 isimli oluşturulan panoyu silme Trello'da",
+			"url": "https://api.trello.com/1/boards/666f35fbe5b3af2c79ae3c84?key=your_key&token=your_token",
+			"time": 1216,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Reasonable response time": true,
+				"Board Deleted Successfully": true
+			},
+			"testPassFailCounts": {
+				"Reasonable response time": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board Deleted Successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1216
+			],
+			"allTests": [
+				{
+					"Reasonable response time": true,
+					"Board Deleted Successfully": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 7007,
+	"collection": {
+		"requests": [
+			{
+				"id": "7d64911c-71fb-4f8f-8276-1a1a0a7a90e9",
+				"method": "POST"
+			},
+			{
+				"id": "b1a1afcc-3d3d-49c5-b189-6d86269a41ff",
+				"method": "POST"
+			},
+			{
+				"id": "e61c35a1-424f-46a2-bc33-173745aa7618",
+				"method": "POST"
+			},
+			{
+				"id": "1cae023b-76a9-45f9-8afe-b4fd80746fe6",
+				"method": "PUT"
+			},
+			{
+				"id": "e4a8e6f0-a651-4580-8178-5c3c66664bc1",
+				"method": "PUT"
+			},
+			{
+				"id": "0b381515-f91b-445b-b87d-1924f00aae8f",
+				"method": "PUT"
+			},
+			{
+				"id": "6a534a06-cfa0-4198-b131-d43d4c2f5092",
+				"method": "GET"
+			},
+			{
+				"id": "0b239a91-41be-4b8b-9949-d8b76ec69564",
+				"method": "GET"
+			},
+			{
+				"id": "832966ca-fe1d-4fcd-b2ef-ae9d10e23e26",
+				"method": "GET"
+			},
+			{
+				"id": "ef4513d0-7adb-4985-a718-bee7710d0a8c",
+				"method": "POST"
+			},
+			{
+				"id": "1c4fe91a-4fb9-4d51-bc7c-08b2446a27b5",
+				"method": "PUT"
+			},
+			{
+				"id": "367529f5-995e-4e3b-9b60-9b97cb19928d",
+				"method": "GET"
+			},
+			{
+				"id": "30c92e24-9832-4451-b751-00b0f66e7938",
+				"method": "DELETE"
+			},
+			{
+				"id": "00151af0-6a7e-480b-90bd-3681c0a395da",
+				"method": "DELETE"
+			},
+			{
+				"id": "d327bd33-fad4-4e57-85d9-33c09b671fab",
+				"method": "DELETE"
+			}
+		]
+	}
+}
